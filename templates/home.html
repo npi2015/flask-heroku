@@ -1,0 +1,37 @@
+<html>
+<body bgcolor=#d4a3ae>
+
+<center>
+
+    <h1> ¿VENDRÁ HOY EL PACIENTE? </h1><br>
+
+    <h3>
+        <p> Bienvenido, señor doctor. Seguro que alguna vez se ha preguntado si el paciente con el que se ha citado a la hora
+            de comer hoy vendrá a la consulta para su revisión o si se quedará en su casa comiendo doritos (pese a que sabe que
+            no son sanos). Está página está para ayudarle decidir si jugársela a salir a comer ese miercoles por la tarde es algo
+            que puede hacer o si su paciente va a estar esperando en la sala de espera durante 40 minutos mientras se acabo su
+            plato de gambas con chorizo.</p>
+
+        <p>Para hacer esta predicción hemos hecho un modelo de machine learning con datos de algún sitio fiable. Para ver
+        la predicción, solo tiene que completar los camos que mostramos abajo. Entonces le saldrá un mensaje con la probabilidad de
+        que el paciente vaya a hacerle una visita. El modelo tiene un acierto del 70%, así que si dice que el paciente tiene una probabilidad del
+        30% de ir, en realidad es una probabilidad de 70 x 30 = 2100% de que el paciente vaya (suspendí probabilidad el semestre pasado, que alguien me ayude).
+        Así que puede que ese plato de gambas con chorizo puede esperar (mejor, ¿que clase de aberración es esa?) </p>
+    </h3>
+
+    <form method="POST", action="{{url_for('home')}}">
+        <b> Variable 1 :  <input type="text", name='Variable 1', placeholder="Cosa"> <br><br>
+            Variable 2 :  <input type="text", name='Variable 2', placeholder="Cosita"> <br><br>
+            Variable 3 :  <input type="text", name='Variable 3', placeholder="Cosacon"> <br><br>
+            Variable 4 :  <input type="text", name='Variable 4', placeholder="Cosaco"> <br><br>
+            Variable 5 :  <input type="text", name='Variable 5', placeholder="Cosecha"> <br><br>
+            Variable 6 : <input type="text", name='Variable 6', placeholder="Coso"> <br><br><br></b>
+        <input type="submit" , value='¿Habrá hoy gambas?' >
+    </form>
+    <img src='../static/hospital.png' alt="hospital"><br><br>
+    Para evitar problemas de copyright, he hecho yo la imagen.
+
+</center>
+
+</body>
+</html>
